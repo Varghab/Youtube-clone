@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 import { fetchFromAPI } from '../utils/fetchFromAPI';
 import Videos from './Videos';
 
-import{ videos, ChannelCard} from '/';
+import{ ChannelCard} from '/';
 
 function ChannelDetail() {
   const {id} = useParams();
