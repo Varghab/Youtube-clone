@@ -1,4 +1,4 @@
-import { BrowserRouter, createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import {Box} from '@mui/material';
 import {Feed, VideoDetail, ChannelDetail, SearchFeed, Navbar} from './components'
 

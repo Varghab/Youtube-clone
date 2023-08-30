@@ -1,11 +1,10 @@
 import React from 'react'
 import {Typography, Card, CardContent, CardMedia} from '@mui/material';
 import {CheckCircle} from '@mui/icons-material';
-import { demoVideoUrl, demoVideoTitle, demoChannelUrl, demoChannelTitle } from '../utils/constants';
+import { demoVideoUrl, demoVideoTitle, demoChannelUrl } from '../utils/constants';
 import { Link } from 'react-router-dom';
 
 function VideoCard({video : {id: {videoId}, snippet}}) {
-  console.log(snippet);
   return (
     <Card sx={{width: { md: '310px', xs: '100%' , sm: '350px'}, boxShadow: 'none', borderRadius:'0'}}>
       <Link to={videoId? `/video/${videoId}`: demoVideoUrl}>
